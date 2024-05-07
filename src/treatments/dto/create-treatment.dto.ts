@@ -7,6 +7,9 @@ export class CreateTreatmentDto {
     id: string;
     personalMessage: boolean;
     animalId: boolean;
-    providerId: string
-    status: string
+    providerId: string;
+    status: string;
+    startDate: string;
+    endDate: string;
+    hours: string[];
 }

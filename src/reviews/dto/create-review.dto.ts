@@ -5,7 +5,7 @@ export class CreateReviewDto {
     @IsString()
     @IsNotEmpty()
     id: string;
-    reviewText: boolean;
+    reviewText: string;
     rating: number;
     consumerId: string;
     providerId: string;

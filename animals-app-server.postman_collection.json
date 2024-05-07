@@ -1,0 +1,616 @@
+{
+	"info": {
+		"_postman_id": "03d9329b-2245-48e9-9020-d465e44058a8",
+		"name": "animals-app-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34736052"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "http://localhost:3000/users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"Pm6UbL7BHkbtKU6LKp2B7KZw8RN1\",\r\n    \"name\": \"שרון ודוד\",\r\n    \"birthDate\":\"2024-01-08T00:00:00Z\",\r\n    \"email\": \"memory1242@gmail.com\",\r\n    \"phoneNumber\": \"0526666269\",\r\n    \"googlePlaceId\": \"ChIJ-XCHg4FMHRURhaY-3N7Gi9I\",\r\n    \"imageUrl\": \"C:/devl/work/animals-app/animals-app/assets/49070804-sharingasodaintheparkahappyyoungcouplesippingcolatogetherinthepark-1.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/users/Pm6UbL7BHkbtKU6LKp2B7KZw8RN3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/Pm6UbL7BHkbtKU6LKp2B7KZw8RN3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"Pm6UbL7BHkbtKU6LKp2B7KZw8RN3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/users/yHiCvLDiCLejA8Pvhv9GDkAL2Wj2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\":\"0536290069\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/yHiCvLDiCLejA8Pvhv9GDkAL2Wj2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"yHiCvLDiCLejA8Pvhv9GDkAL2Wj2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "providers",
+			"item": [
+				{
+					"name": "http://localhost:3000/providers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"8tNxPaiFEnMMlbDQ9iv9DPZ8BX02\",\r\n    \"content\": \"היי! אנחנו שיר וגל, אוהבי כלבים מגיל 0 וחברים הכי טובים. אנחנו כרגע שוכרים ביחד דירה בתל אביב ולכן מציעים את השירות שלנו ביחד. אחריות בשבילנו היא ערך עליון, וכשאתם שמים את הכלב שלכם איתנו אתם יכולים לישון בשקט, וזאת הבטחה ! שימו לב. היי! אנחנו שיר וגל, אוהבי כלבים מגיל 0 וחברים הכי טובים. אנחנו כרגע שוכרים ביחד דירה בתל אביב ולכן מציעים את השירות שלנו ביחד. אחריות בשבילנו היא ערך עליון, וכשאתם שמים את הכלב שלכם איתנו אתם יכולים לישון בשקט, וזאת הבטחה ! שימו לב.\",\r\n    \"isHasExperience\":true,\r\n    \"isHasProfessionalExperience\":true,\r\n    \"professionalExperiences\":[\"אילוף\",\"דוגסיטר\"],\r\n    \"experienceContent\":\"יש לי אחלה של נסיון\",\r\n    \"services\":[\"שמירה ללא לינה\",\"הוצאה לטיול\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/providers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"providers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/providers/8tNxPaiFEnMMlbDQ9iv9DPZ8BX02",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/providers/8tNxPaiFEnMMlbDQ9iv9DPZ8BX02",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"providers",
+								"8tNxPaiFEnMMlbDQ9iv9DPZ8BX02"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/providers/Pm6UbL7BHkbtKU6LKp2B7KZw8RN2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"professionalExperiences\":[\"דוגסיטינג\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/providers/Pm6UbL7BHkbtKU6LKp2B7KZw8RN2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"providers",
+								"Pm6UbL7BHkbtKU6LKp2B7KZw8RN2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/providers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/providers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"providers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "animals",
+			"item": [
+				{
+					"name": "http://localhost:3000/animals",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"8tNxPaiFEnMMlbDQ9iv9DPZ8BX02\",\r\n    \"content\": \"היי! אנחנו שיר וגל, אוהבי כלבים מגיל 0 וחברים הכי טובים. אנחנו כרגע שוכרים ביחד דירה בתל אביב ולכן מציעים את השירות שלנו ביחד. אחריות בשבילנו היא ערך עליון, וכשאתם שמים את הכלב שלכם איתנו אתם יכולים לישון בשקט, וזאת הבטחה ! שימו לב. היי! אנחנו שיר וגל, אוהבי כלבים מגיל 0 וחברים הכי טובים. אנחנו כרגע שוכרים ביחד דירה בתל אביב ולכן מציעים את השירות שלנו ביחד. אחריות בשבילנו היא ערך עליון, וכשאתם שמים את הכלב שלכם איתנו אתם יכולים לישון בשקט, וזאת הבטחה ! שימו לב.\",\r\n    \"isHasExperience\":true,\r\n    \"isHasProfessionalExperience\":true,\r\n    \"professionalExperiences\":[\"אילוף\",\"דוגסיטר\"],\r\n    \"experienceContent\":\"יש לי אחלה של נסיון\",\r\n    \"services\":[\"שמירה ללא לינה\",\"הוצאה לטיול\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/animals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/animals/8tNxPaiFEnMMlbDQ9iv9DPZ8BX02",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/animals/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animals",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/animals/Pm6UbL7BHkbtKU6LKp2B7KZw8RN2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"professionalExperiences\":[\"דוגסיטינג\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/animals/Pm6UbL7BHkbtKU6LKp2B7KZw8RN2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animals",
+								"Pm6UbL7BHkbtKU6LKp2B7KZw8RN2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/animals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/animals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animals"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "places",
+			"item": [
+				{
+					"name": "http://localhost:3000/places",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"googlePlaceId\": \"ChIJ-XCHg4FMHRURhaY-3N7Gi9I\",\r\n            \"location\": { \"lat\": 32.06956049999999, \"lng\": 34.77165919999999 },\r\n            \"address\": \"שינקין\",\r\n            \"number\": \"12\",\r\n            \"region\": \"מחוז תל אביב\",\r\n            \"city\": \"תל אביב-יפו\",\r\n            \"country\": \"ישראל\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/places",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"places"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/places/8tNxPaiFEnMMlbDQ9iv9DPZ8BX02",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/places/ChIJ-XCHg4FMHRURhaY-3N7Gi9I",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"places",
+								"ChIJ-XCHg4FMHRURhaY-3N7Gi9I"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/places/Pm6UbL7BHkbtKU6LKp2B7KZw8RN2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"address\":\"צלום\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/places/ChIJ-XCHg4FMHRURhaY-3N7Gi9I",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"places",
+								"ChIJ-XCHg4FMHRURhaY-3N7Gi9I"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/places",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/places",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"places"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "treatments",
+			"item": [
+				{
+					"name": "http://localhost:3000/treatments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"id\": \"1000000004\",\r\n    \"animalId\": \"1\",\r\n    \"startDate\":\"2024-02-03\",\r\n    \"endDate\": \"2024-02-07\",\r\n     \"hours\": [\"08:15\"],\r\n     \"status\":\"future\",\r\n     \"providerId\":\"Pm6UbL7BHkbtKU6LKp2B7KZw8RN2\",\r\n    \"personalMessage\": \"צלום\"\r\n  }  \r\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/treatments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"treatments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/places/8tNxPaiFEnMMlbDQ9iv9DPZ8BX02",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/treatments/1000000004",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"treatments",
+								"1000000004"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/treatments/1000000004",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"personalMessage\":\"Haide\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/treatments/1000000004",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"treatments",
+								"1000000004"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/treatments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/treatments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"treatments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reviews",
+			"item": [
+				{
+					"name": "http://localhost:3000/reviews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n       \"id\": \"2\",\r\n    \"reviewText\": \"הוא קצת הלחיץ אוי אבל סך הכל בחור טוב\",\r\n    \"rating\": 3,\r\n    \"consumerId\": \"Pm6UbL7BHkbtKU6LKp2B7KZw8RN2\",\r\n    \"providerId\": \"8tNxPaiFEnMMlbDQ9iv9DPZ8BX02\"\r\n  }  \r\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/reviews/2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/reviews/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/reviews/2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"personalMessage\":\"Haide\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/reviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

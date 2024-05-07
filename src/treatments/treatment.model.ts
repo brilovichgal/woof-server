@@ -1,4 +1,4 @@
-import { Column, Model, PrimaryKey, Table } from 'sequelize-typescript';
+import { Column, DataType, Model, PrimaryKey, Table } from 'sequelize-typescript';
 
 @Table({
     tableName: 'treatments',
@@ -21,4 +21,16 @@ export class Treatment extends Model {
 
     @Column
     status: string
+
+    @Column
+    startDate: string;
+
+    @Column
+    endDate: string;
+
+    @Column({
+        type: DataType.ARRAY(DataType.STRING),
+        defaultValue: [],
+    })
+    hours: string[];
 }

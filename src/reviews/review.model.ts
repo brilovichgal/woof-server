@@ -1,7 +1,7 @@
 import { Column, Model, PrimaryKey, Table } from 'sequelize-typescript';
 
 @Table({
-    tableName: 'places',
+    tableName: 'reviews',
     timestamps: false
 })
 export class Review extends Model {
@@ -11,7 +11,7 @@ export class Review extends Model {
     id: string;
 
     @Column
-    placeText: string;
+    reviewText: string;
 
     @Column
     rating: number

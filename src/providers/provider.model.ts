@@ -1,4 +1,5 @@
-import { Column, DataType, ForeignKey, Model, PrimaryKey, Table } from 'sequelize-typescript';
+import { Column, DataType, Model, PrimaryKey, Table } from 'sequelize-typescript';
+import { EService } from './EService';
 
 @Table({
     tableName: 'providers',
@@ -6,25 +7,24 @@ import { Column, DataType, ForeignKey, Model, PrimaryKey, Table } from 'sequeliz
 })
 export class Provider extends Model {
     @PrimaryKey
-    @ForeignKey(() => Provider)
     @Column
     id: string;
 
     @Column
-    name: string
+    isHasExperience: boolean;
 
     @Column
-    email: string
+    isHasProfessionalExperience: boolean;
 
-    @Column({ type: DataType.DATEONLY, })
-    birthDate: Date
-
-    @Column
-    phoneNumber: string
+    @Column({ type: DataType.ARRAY(DataType.STRING) })
+    services: EService[];
 
     @Column
-    googlePlaceId: string
+    content: string
 
     @Column
-    imageUrl: string;
+    experienceContent: string
+
+    @Column({ type: DataType.ARRAY(DataType.STRING) })
+    professionalExperiences: string[];
 }

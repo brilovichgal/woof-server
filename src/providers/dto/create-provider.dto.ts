@@ -1,4 +1,5 @@
 import { IsNotEmpty, IsString } from 'class-validator';
+import { EService } from '../EService';
 
 
 export class CreateProviderDto {
@@ -7,6 +8,8 @@ export class CreateProviderDto {
     id: string;
     isHasExperience: boolean;
     isHasProfessionalExperience: boolean;
+    services: EService[];
     content: string
     experienceContent: string
+    professionalExperiences: string[];
 }

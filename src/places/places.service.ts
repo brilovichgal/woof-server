@@ -15,24 +15,24 @@ export class PlacesService {
         return this.placeModel.create({ ...createPlaceDto });
     }
 
-    update(id: string, updatePlaceDto: UpdatePlaceDto): Promise<[number]> {
-        return this.placeModel.update({ ...updatePlaceDto }, { where: { id } });
+    update(googlePlaceId: string, updatePlaceDto: UpdatePlaceDto): Promise<[number]> {
+        return this.placeModel.update({ ...updatePlaceDto }, { where: { googlePlaceId } });
     }
 
     async findAll(): Promise<Place[]> {
         return this.placeModel.findAll();
     }
 
-    findOne(id: string): Promise<Place> {
+    findOne(googlePlaceId: string): Promise<Place> {
         return this.placeModel.findOne({
             where: {
-                id,
+                googlePlaceId,
             },
         });
     }
 
-    async remove(id: string): Promise<void> {
-        const place = await this.findOne(id);
+    async remove(googlePlaceId: string): Promise<void> {
+        const place = await this.findOne(googlePlaceId);
         await place.destroy();
     }
 }

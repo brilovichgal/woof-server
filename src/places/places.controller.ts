@@ -21,20 +21,20 @@ export class PlacesController {
         return this.placesService.findAll();
     }
 
-    // GET <url>/places/<id>/
-    @Get(':id')
-    findOne(@Param('id') id: string): Promise<Place> {
-        return this.placesService.findOne(id);
+    // GET <url>/places/<googlePlaceId>/
+    @Get(':googlePlaceId')
+    findOne(@Param('googlePlaceId') googlePlaceId: string): Promise<Place> {
+        return this.placesService.findOne(googlePlaceId);
     }
 
-    // DELETE <url>/places/<id>/
-    @Delete(':id')
-    remove(@Param('id') id: string): Promise<void> {
-        return this.placesService.remove(id);
+    // DELETE <url>/places/<googlePlaceId>/
+    @Delete(':googlePlaceId')
+    remove(@Param('googlePlaceId') googlePlaceId: string): Promise<void> {
+        return this.placesService.remove(googlePlaceId);
     }
 
-    @Put(':id')
-    update(@Param('id') id: string, @Body() updatePlaceDto: UpdatePlaceDto) {
-        return this.placesService.update(id, updatePlaceDto);
+    @Put(':googlePlaceId')
+    update(@Param('googlePlaceId') googlePlaceId: string, @Body() updatePlaceDto: UpdatePlaceDto) {
+        return this.placesService.update(googlePlaceId, updatePlaceDto);
     }
 }

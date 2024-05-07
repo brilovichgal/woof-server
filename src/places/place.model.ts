@@ -1,4 +1,5 @@
-import { Column, Model, PrimaryKey, Table } from 'sequelize-typescript';
+import { Column, DataType, Model, PrimaryKey, Table } from 'sequelize-typescript';
+import { Location } from './dto/Location';
 
 @Table({
     tableName: 'places',
@@ -10,7 +11,7 @@ export class Place extends Model {
     @Column
     googlePlaceId: string;
 
-    @Column
+    @Column({ type: DataType.JSONB, })
     location: Location;
 
     @Column
